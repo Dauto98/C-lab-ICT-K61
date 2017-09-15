@@ -1,0 +1,37 @@
+Week 1 homework
+
+shortcuts key in emacs
+
+- Navigation command
+  M-<
+  M->
+  C-v
+  M-v
+  C-a
+  C-e
+  C-p
+  C-n
+  M-f
+  M-b
+  M-x gotoline
+
+- File operation command
+  C-x C-f
+  C-x C-s
+  C-x C-w
+
+- Text manipulation command
+  C-spacebar
+  C-w
+  M-w
+  C-y
+
+- Window, buffer command
+  C-x 1
+  C-x 2
+  C-x 3
+  C-x o
+  C-x b
+  C-s
+  c-r
+  M-%
