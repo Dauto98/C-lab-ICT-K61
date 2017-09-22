@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<limits.h>
+
+int main(){
+  int j;
+  long int k;
+  float x;
+  double z;
+
+  printf("Enter an integer between %i and %i: ", INT_MIN, INT_MAX);
+  scanf("%i", &i);
+  printf("You enter %d\n\n", i)
+}
