@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(){
+  int student;
+  float avg;
+  
+  printf("Enter the number of student: ");
+  scanf("%d", &student);
+
+  avg = student/7;
+
+  printf("%f, %d", student, student);
+}

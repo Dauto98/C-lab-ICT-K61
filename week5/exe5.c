@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(){
+  float a, b;
+
+  printf("Enter a: ");
+  scanf("%f", &a);
+
+  printf("Enter b: ");
+  scanf("%f", &b);
+
+  printf("(a + b)^3/(a^2 - b^2 -ab) = %.2f\n", (a+b)*(a+b)*(a+b)/(a*a - b*b - a*b));
+  printf("(a - b)(a + b)/((a^2 - b^2)(a^2 + b^2)) = %.2f\n", (a-b)*(a+b)/((a*a - b*b)*(a*a + b*b)));
+
+  return 0;
+}
