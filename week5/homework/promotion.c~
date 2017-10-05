@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+  const int ipodPrice = 148;
+  const int ipadPrice = 288;
+  const int threshold = 1020;
+
+  int ipod, ipad;
+
+  printf("Enter the number of ipod: ");
+  scanf("%d", &ipod);
+
+  printf("Enter the number of ipad: ");
+  scanf("%d", &ipad);
+
+  printf("")
+}

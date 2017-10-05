@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main(){
+  const unsigned long fridgePrice = 8000000;
+  const unsigned long TVPrice = 15000000;
+  const unsigned long laptopPrice = 12000000;
+
+  int fridge, TV, laptop;
+
+  printf("Enter fridge sales number: ");
+  scanf("%d", &fridge);
+
+  printf("Enter TV sales number: ");
+  scanf("%d", &TV);
+
+  printf("Enter laptop sales number: ");
+  scanf("%d", &laptop);
+
+  printf("The profit of: \n");
+  printf("\tFridge: %d", fridge*fridgePrice);
+  printf("\TV: %d", TV*TVPrice);
+  printf("\Laptop: %d", laptop*laptopPrice);
+}
