@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+  float degree;
+
+  printf("Enter heading in degree: ");
+  scanf("%f", &degree);
+
+  
+}

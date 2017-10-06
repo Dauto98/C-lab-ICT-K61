@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+int main(){
+  int myNum, yourNum;
+  srand(time(NULL));
+  myNum = 1 + rand() &10;
+  printf("Guess: ")
+}
