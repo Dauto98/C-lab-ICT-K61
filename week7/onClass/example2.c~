@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main(){
+  char c;
+
+  for(int count = 0; (c=getchar() != '.'), count++){};
+
+  printf("The number of letter typed is %d\n", count);
+
+  return 0;
+}

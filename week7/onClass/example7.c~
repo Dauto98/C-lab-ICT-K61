@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main(){
+  float f;
+  long int cash;
+  char name[30];
+  int month;
+
+  printf("Enter your name: ");
+  scanf("%[^\n]s", name);
+
+  printf("How many month you want: ");
+  scanf("%d", &month);
+
+  printf("How much money: ");
+  scanf("%ld", &cash);
+
+  printf("With which interest: ");
+  scanf("%f", &f);
+
+  
+}
