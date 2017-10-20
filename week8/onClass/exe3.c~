@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main(){
+  const long int regularCar = ;
+  const long int overtimeCar = ;
+  
+  const long int regularBus = ;
+  const long int overtimeBus = ;
+
+  const long int regularTruck = ;
+  const long int overtimeTruck = ;
+
+  while(1) {
+    printf("\n\tMenu\n");
+    printf("1 - new payment\n");
+    printf("2 - quit\n");
+    printf("Enter an option: ");
+    scanf("%d", &option);
+
+    while(option != 1 && option != 2) {
+      printf("Please choose the correct option: ");
+      scanf("%d", &option);
+    };
+
+    if (option == 1) {
+      
+    } else if (option == 2) {
+      printf("Goodbye\n");
+      break;
+    };
+  }
+}
