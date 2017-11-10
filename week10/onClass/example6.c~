@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+int menu(){
+  int option;
+  while(1){
+      printf("\tMENU\n");
+      printf("1 - Input matrices A, B\n");
+      printf("2 - Display matrices A, B\n");
+      printf("3 - Sum of matrices A, B\n");
+      printf("4 - Product of matrices A, B\n");
+      printf("5 - Quit\n");
+      
+      scanf("%d", &option);
+      
+      while(option < 1 || option > 5){
+	printf("Please type the correct option: ");
+	scanf("%d", &option);
+      };
+
+      if(option == 1) {
+	
+      } else if (option == 2) {
+	
+      } else if (option == 3) {
+	
+      } else if (option == 4) {
+	
+      } else if (option == 5) {
+	printf("Goodbye\n");
+	break;
+      };
+  }; 
+}
+
+int main(){
+  menu();
+
+  return 0;
+}

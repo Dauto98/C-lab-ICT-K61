@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<math.h>
+#include<time.h>
+#include <stdlib.h>
+
+int main(){
+  srand(time(NULL));
+  int array[100];
+
+  for(int i = 0; i < 100; i++){
+    array[i] = rand() % 101;
+  };
+
+  int count = 0;
+  int min = array[0];
+  int sum = 0;
+  for(int i = 0; i < 100; i++){
+    printf("%5d", array[i]);
+    count++;
+    if(count >= 10) {
+      count = 0;
+      printf("\n");
+    };
+    if(min > array[i]){
+      min = array[i];
+    };
+    if(array[i] % 2){
+      sum += array[i];
+    };
+  };
+  printf("\nThe total of odd number: %d\n", sum);
+  printf("The minimum number: %d\n", min);
+
+  return 0;
+}
