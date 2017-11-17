@@ -2,6 +2,47 @@
 
 int computer[4][10] = {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0}{0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
 
+void chooseComputer(col, row) {
+	if (computer[row][col] == 0) {
+		computer[row][col] = 1;
+		printf("computer %d-%d turned on\n", row, col);
+	} else {
+		printf("computer already turned on\n");
+	}
+}
+
+void quitComputer(col, row) {
+	if (computer[row][col] == 1) {
+		computer[row][col] = 0;
+		printf("computer %d-%d turned off\n", row, col);
+	} else {
+		printf("computer already turned off\n");
+	}
+}
+
+void printComStatus() {
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 10; j++) {
+			printf("%5d", computer[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+void printEachConsumption(/* arguments */) {
+	/* code */
+}
+
+void printtTotalConsumption(/* arguments */) {
+	/* code */
+}
+
+void mostAndLestUsedCom(/* arguments */) {
+	/* code */
+}
+
+
+
 int main() {
 	int option;
 
@@ -23,67 +64,44 @@ int main() {
 		};
 
 		if (option == 1) {
-			int row;
-			printf("Choose one row: ");
-			scanf("%d", &row);
-
-			while (row != 1 && row != 2 && row != 3 && row != 4 && row != 5) {
-				printf("Enter from 1 to 5: ");
-				scanf("%d", &row);
-			}
-
-			for (int i = 0; i < 3; i++) {
-				computer[row - 1][i] = computer[row - 1][i] ? 0 : 1;
-			}
-		} else if (option == 2) {
-			int column;
-			printf("Choose one column: ");
-			scanf("%d", &column);
-
-			while (column != 1 && column != 2 && column != 3) {
-				printf("Enter from 1 to 3: ");
-				scanf("%d", &column);
-			}
-
-			for (int i = 0; i < 5; i++) {
-				computer[i][column - 1] = computer[i][column - 1] ? 0 : 1;
-			}
-		} else if (option == 3) {
-			int row, column;
-			printf("Choose one column: ");
-			scanf("%d", &column);
-
-			while (column != 1 && column != 2 && column != 3) {
-				printf("Enter from 1 to 3: ");
-				scanf("%d", &column);
-			}
-
-			printf("Choose one row: ");
-			scanf("%d", &row);
-
-			while (row != 1 && row != 2 && row != 3 && row != 4 && row != 5) {
-				printf("Enter from 1 to 5: ");
-				scanf("%d", &row);
-			}
-
-			computer[row - 1][column - 1] = computer[row - 1][column - 1] ? 0 : 1;
-		} else if (option == 4) {
-			int sum = 0;
-			for (int i = 0; i < 5; i++) {
-				for (int j = 0; j < 3; j++) {
-					if (computer[i][j]) {
-						if (i % 2 == 0 && j % 2 == 0) {
-							sum += 20;
-						} else if (i % 2 != 0 && j % 2 != 0) {
-							sum += 10;
-						} else {
-							sum += 15;
-						}
-					};
-				};
+			printf("Enter computer'col: ");
+			scanf("%d", &col);
+			while (col < 1 || col > 10) {
+				printf("Invalid col, retype: ");
+				scanf("%d\n", &col);
 			};
-			printf("Total consumption: %d\n", sum);
-		} else if (option == 5) {
+
+			printf("Enter computer'row: ");
+			scanf("%d", &row);
+			while (row < 1 || row > 4) {
+				printf("Invalid row, retype: ");
+				scanf("%d\n", &row);
+			};
+			chooseComputer(col, row);
+		} else if (option == 2) {
+			printf("Enter computer'col: ");
+			scanf("%d", &col);
+			while (col < 1 || col > 10) {
+				printf("Invalid col, retype: ");
+				scanf("%d\n", &col);
+			};
+
+			printf("Enter computer'row: ");
+			scanf("%d", &row);
+			while (row < 1 || row > 4) {
+				printf("Invalid row, retype: ");
+				scanf("%d\n", &row);
+			};
+			quitComputer(col, row);
+		} else if (option == 3) {
+			printComStatus()
+		} else if (option == 4) {
+			printEachConsumption()
+		}	else if (option == 5) {
+			printtTotalConsumption()
+		} else if (option == 6) {
+			mostAndLestUsedCom()
+		} else if (option == 7) {
 			printf("Goodbye\n");
 			break;
 		};
