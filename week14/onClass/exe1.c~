@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+typedef struct monthData  {
+  float rainfall;
+  float highTemp;
+  float lowTemp;
+  float avgTemp;
+} monthData;
+
+int main(){
+  monthData months[12];
+
+  printf("Enter data\n");
+
+  for(int i = 0; i < 12; i++){
+    printf("Enter rainfall for month %d: ");
+    scanf("%f", &months[i].rainfall);
+
+    printf("Enter the highest temperature for month %d: ");
+    scanf("%f", &months[i].highTemp);
+
+    printf("Enter the lowest temperature for month %d: ");
+    scanf("%f", &months[i].lowTemp);
+
+    printf("Enter the average temperature for month %d: ");
+    scanf("%f", &months[i].avgTemp);
+  }
+}

@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+typedef struct {
+  unsigned int day;
+  unsigned int month;
+  unsigned int year;
+} Date;
+
+void inputDate(Date *date) {
+  printf("Enter the year: ");
+  scanf("%d", date->year);
+
+  printf("Enter the month: ");
+  scanf("%d", date->month);
+
+  while(date->month > 12) {
+    printf("invalid month, retype: ");
+    scanf("%d", date->month);
+  };
+
+  printf("Enter the day: ");
+  scanf("%d", date->day);
+
+  if(date->month == 1 || date->month == 3 || date->month == 5 || date->month == 7 || date->month == 8 || date->month == 10 || date->month == 12 ||) {
+    while(date->day > 31) {
+      printf("Invalid day, retype: ");
+      scanf("%d", date->day)
+    }
+  }
+}
+
+int main(){
+  Date date1;
+
+  
+}
